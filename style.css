@@ -10,6 +10,9 @@ header {
   align-items: center;
   padding: 1rem 3rem;
   border-bottom: rgb(41, 41, 41) solid 1px;
+  position: sticky;
+  top: 0;
+  background-color: white;
 }
 ul,
 .icons {
