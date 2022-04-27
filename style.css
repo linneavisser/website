@@ -1,4 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+/*///// GENERAL STYLING & VARIABLES////*/
+:root {
+  --body--font: "Inter", sans-serif;
+  --bg--blue: #85b4d7;
+}
 * {
   margin: 0;
   box-sizing: border-box;
+}
+body {
+  font-family: var(--body--font);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.4;
+}
+h6 {
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/*///// FOOTER //////*/
+footer {
+  background-color: var(--bg--blue);
+  color: white;
+}
+footer p,
+footer a {
+  font-size: 13px;
+  color: white;
+  line-height: 23px;
+  font-weight: 300;
+}
+footer h6 {
+  padding-bottom: 1.2rem;
+  line-height: 22px;
+}
+.footerTop {
+  padding: 130px 20px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.footerHelp,
+.footerWarehouse,
+.footerSilfen {
+  display: flex;
+  flex-direction: column;
+}
+.footerSilfen,
+.footerWarehouse {
+  padding-bottom: 3rem;
+}
+.footerSilfen p:nth-child(5) {
+  padding-top: 1rem;
+}
+.footerHelp a {
+  padding-bottom: 0.3rem;
+}
+
+/* footer form field */
+input {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  line-height: 28px;
+  font-size: 14px;
+  color: white;
+}
+span.emailField input {
+  width: 100%;
+  position: relative;
+}
+::placeholder,
+input {
+  padding: 0.3rem;
+}
+::placeholder {
+  color: #9bb9cf;
+}
+input[type="submit"] {
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: absolute;
+  left: 80%;
+}
+form {
+  padding: 1rem 0 3rem;
+}
+
+/*//// MEDIA QUERIES /////*/
+
+@media only screen and (min-width: 768px) {
+  /* FOOTER */
+  .footerTop {
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .leftFooter,
+  form {
+    margin-right: 1rem;
+  }
+  .rightFooter {
+    display: flex;
+    gap: 2rem;
+  }
+  input[type="submit"] {
+    left: 30%;
+  }
 }
