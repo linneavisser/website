@@ -2,3 +2,33 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: rgb(41, 41, 41) solid 1px;
+}
+ul,
+.icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icons {
+  padding-left: 11rem;
+}
+li {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  width: 11rem;
+}
