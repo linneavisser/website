@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- BURGER MENU -->
+      <div class="burgercontainer">
+        <nav class="navbar">
+          <div class="hamburger-menu">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+          </div>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Register / Login</a>
+              <a href="#" class="nav-link"
+                ><img src="svg/heart.svg" alt="heart"
+              /></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">New In</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Shop</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Silfen Play</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Sustainability</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">SS22</a>
+              <img class="arrow" src="svg/arrow.svg" alt="arrow" />
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- REGULAR MENU -->
+      <nav class="regularmenu">
+        <ul class="navitems">
+          <li><a href="newin.html">New In</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="silfenplay.html">Silfen Play</a></li>
+          <li><a href="silfenplay.html">Sustainability</a></li>
+          <li><a href="ss22.html">SS22</a></li>
+        </ul>
+      </nav>
+
+      <img class="logo" src="img/SILFEN-logo.png" alt="logo" />
+      <section class="icons">
+        <li class="iconx"><img src="svg/user.svg" alt="profile" /></li>
+        <li class="icon"><img src="svg/search.svg" alt="search" /></li>
+        <li class="iconx"><img src="svg/heart.svg" alt="heart" /></li>
+        <li class="icon"><img src="svg/bag.svg" alt="bag" /></li>
+      </section>
+    </header>
+
+    <!-- PRODUCT LIST -->
+    <div class="plbanner">
+      <h1>Shop All</h1>
+      <img src="silfen-img/DSC_0547-1-2.jpg" alt="banner" />
+    </div>
+    <main class="productlistmain">
+      <template class="productlistTemplate">
+        <article class="bagarticle">
+          <div class="bags">
+            <a href="product.html"
+              ><img
+                class="bagImg"
+                src="bag_img/516911_BELLFLOWER_FRONT.jpeg"
+                alt="bagpic"
+            /></a>
+          </div>
+          <div class="bagInfo">
+            <p class="bagName">Shoulder Bag Ulla</p>
+            <p class="price">DKK <span>499</span>,00</p>
+          </div>
+        </article>
+      </template>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerTop">
+        <div class="leftFooter">
+          <h6>Come join us, subscribe here!</h6>
+          <p>
+            We’ve been waiting for you! Be the first to know about new
+            arrivals,<br />
+            promotional offers and much more.
+          </p>
+          <form action="index.html" name="email">
+            <span class="emailField">
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                class="email" /><input
+                type="submit"
+                value="Sign Up"
+                class="signUp"
+            /></span>
+          </form>
+        </div>
+        <div class="footerSilfen">
+          <h6>Silfen studio</h6>
+          <p>Klareboderne 10, 1.</p>
+          <p>1115 Copenhagen K</p>
+          <p>Denmark</p>
+          <p>Phone: +45 20518923</p>
+          <p>VAT: DK40912320</p>
+        </div>
+        <div class="footerWarehouse">
+          <h6>Silfen warehouse</h6>
+          <p>Adax A/S, Att: Silfen Studio</p>
+          <p>Vestre Hedevej 18</p>
+          <p>DK-4000 Roskilde</p>
+          <p>Denmark</p>
+        </div>
+        <div class="footerHelp">
+          <h6>Help</h6>
+          <a href="#">About</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Order Tracking</a>
+          <a href="#">Currency</a>
+          <a href="#">Contact</a>
+          <a href="#">Delivery & returns</a>
+          <a href="#">Return items</a>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <div class="cc">
+          <h6>&copy;2022. Team 11. All right reserved</h6>
+          <div class="ccLinks">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy & Cookie Policy</a>
+          </div>
+        </div>
+        <div class="connect">
+          <h6>Connect</h6>
+          <div class="connectSVG">
+            <a href="#"><img src="svgs-footer/Vector.svg" alt="facebook" /></a>
+            <a href="#"
+              ><img src="svgs-footer/fa-brands_instagram.svg" alt="instagram"
+            /></a>
+            <a href="#"
+              ><img src="svgs-footer/fa_youtube.svg" alt="youtube"
+            /></a>
+            <a href="#"
+              ><img src="svgs-footer/entypo_email.svg" alt="email"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
