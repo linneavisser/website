@@ -24,7 +24,7 @@ h6 {
   text-transform: uppercase;
 }
 
-/*///// FOOTER //////*/
+/*/ //// FOOTER //////*/
 footer {
   background-color: var(--bg--blue);
   color: white;
@@ -61,18 +61,43 @@ footer h6 {
 .footerHelp a {
   padding-bottom: 0.3rem;
 }
+.footerBottom {
+  padding: 0 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footerBottom .ccLinks {
+  display: flex;
+  gap: 1rem;
+}
+.footerBottom img {
+  height: 1rem;
+  width: auto;
+}
+.footerBottom .connectSVG {
+  display: flex;
+  gap: 1rem;
+}
 
 /* footer form field */
-input {
+
+span.emailField {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(0, 0, 0, 0.11);
+}
+span.emailField input {
+  background: none;
+  border: none;
   line-height: 28px;
   font-size: 14px;
   color: white;
 }
-span.emailField input {
-  width: 100%;
-  position: relative;
+input.email {
+  width: 80%;
 }
 ::placeholder,
 input {
@@ -81,13 +106,7 @@ input {
 ::placeholder {
   color: #9bb9cf;
 }
-input[type="submit"] {
-  cursor: pointer;
-  background: none;
-  border: none;
-  position: absolute;
-  left: 80%;
-}
+
 form {
   padding: 1rem 0 3rem;
 }
@@ -98,17 +117,19 @@ form {
   /* FOOTER */
   .footerTop {
     flex-direction: row;
+    justify-content: space-between;
     gap: 3rem;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .leftFooter,
   form {
     margin-right: 1rem;
   }
-  .rightFooter {
-    display: flex;
-    gap: 2rem;
-  }
-  input[type="submit"] {
-    left: 30%;
+  .footerBottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
