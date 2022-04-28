@@ -27,6 +27,7 @@ function showBag(bagArray) {
   bagArray.forEach((bag) => {
     const copy = template.cloneNode(true);
     copy.querySelector(".bagName").textContent = bag.title.rendered;
+    copy.querySelector("a").setAttribute("href", `product.html?id=${bag.id}`);
     copy.querySelector(".price span").textContent = bag.price;
     copy.querySelector(".bagImg").src =
       bag._embedded["wp:featuredmedia"][0].media_details.sizes.large.source_url;
