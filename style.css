@@ -25,7 +25,47 @@ h6 {
 }
 
 /*HEADER*/
-header {
+/* scroll banner */
+#scrollBanner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--bg--blue);
+  width: 100vw;
+  height: 2rem;
+}
+
+.bannerFirst {
+  width: 50%;
+  color: white;
+  font-weight: 200;
+  line-height: 2rem;
+  font-size: 1rem;
+  animation: banner 2s ease-out infinite;
+  font-size: 0.8rem;
+}
+
+.shippingBanner {
+  background-color: var(--bg--blue);
+  color: white;
+  z-index: 10;
+  font-size: 0.8rem;
+  line-height: 2rem;
+  padding-right: 15px;
+}
+@keyframes banner {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(5%);
+    opacity: 1;
+  }
+}
+
+/*HEADER - thordis*/
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -240,6 +280,9 @@ span.emailField input {
 }
 input.email {
   width: 80%;
+}
+input.signUp {
+  cursor: pointer;
 }
 ::placeholder,
 input {
