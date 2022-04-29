@@ -313,6 +313,28 @@ form {
   font-size: 0.7rem;
 }
 
+.pages {
+  display: flex;
+  border: rgb(220, 220, 220) solid 1px;
+  justify-content: center;
+  gap: 1rem;
+  width: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.8rem;
+  margin-left: 40%;
+}
+
+.pages a {
+  font-size: 0.8rem;
+  color: rgb(72, 72, 72);
+}
+
+.arrowsa {
+  max-width: 1rem;
+  align-items: center;
+}
+
 /*//// MEDIA QUERIES /////*/
 
 @media only screen and (min-width: 768px) {

@@ -36,3 +36,5 @@ function showBag(bagArray) {
     parentElement.appendChild(copy);
   });
 }
+
+// PRODUCT VIEW
