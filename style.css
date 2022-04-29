@@ -111,6 +111,7 @@ li a {
   width: 100vw;
   padding: 0;
   background-color: white;
+  z-index: 10;
 }
 
 .nav-item:first-child {
@@ -250,6 +251,88 @@ input {
 
 form {
   padding: 1rem 0 3rem;
+}
+
+/* PRODUCT LIST */
+
+.plbanner {
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+
+.plbanner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.plbanner h1 {
+  position: absolute;
+  top: 150px;
+  left: 50px;
+  width: 100%;
+  z-index: 10;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.productlistmain {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 300px));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 5rem;
+  justify-content: center;
+}
+
+.bags {
+  width: 270px;
+  height: 100%;
+}
+.bagImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.bagInfo {
+  margin-bottom: 0.8rem;
+}
+
+.bagarticle {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.bagName {
+  font-size: 0.8rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 0.7rem;
+}
+
+.pages {
+  display: flex;
+  border: rgb(220, 220, 220) solid 1px;
+  justify-content: center;
+  gap: 1rem;
+  width: 10rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding: 0.8rem;
+  margin-left: 40%;
+}
+
+.pages a {
+  font-size: 0.8rem;
+  color: rgb(72, 72, 72);
+}
+
+.arrowsa {
+  max-width: 1rem;
+  align-items: center;
 }
 
 /*//// MEDIA QUERIES /////*/
