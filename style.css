@@ -103,7 +103,9 @@ li a {
 .logo {
   width: 11rem;
 }
-
+a.logo:hover {
+  opacity: 1;
+}
 .navbar {
   width: 100vw;
   height: 100vh;
