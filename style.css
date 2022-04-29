@@ -38,20 +38,25 @@ h6 {
 .bannerFirst {
   width: 50%;
   color: white;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 2rem;
   font-size: 1rem;
   animation: banner 2s ease-out infinite;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .shippingBanner {
   background-color: var(--bg--blue);
   color: white;
   z-index: 10;
-  font-size: 0.8rem;
+  font-weight: 300;
+  font-size: 0.7rem;
   line-height: 2rem;
-  padding-right: 15px;
+  padding-right: 35px;
+}
+.shippingBanner:hover {
+  opacity: 0.4;
+  cursor: pointer;
 }
 @keyframes banner {
   0% {
@@ -118,7 +123,7 @@ li a {
   width: 20px;
   height: 15px;
   position: fixed;
-  top: 25px;
+  top: 55px;
   left: 25px;
   cursor: pointer;
   display: flex;
@@ -378,59 +383,6 @@ form {
   align-items: center;
 }
 
-/*//// MEDIA QUERIES /////*/
-
-@media only screen and (min-width: 768px) {
-  /* FOOTER */
-  .footerTop {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 3rem;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .leftFooter,
-  form {
-    margin-right: 1rem;
-  }
-  .footerBottom {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  /* PRODUCT VIEW */
-  #productView {
-    flex-direction: row;
-  }
-}
-/* BURGER MENU*/
-@media screen and (min-width: 1010px) {
-  .burgercontainer {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 1010px) {
-  .regularmenu {
-    display: none;
-  }
-  .icons {
-    padding-left: 0;
-  }
-
-  header {
-    padding-right: 1rem;
-  }
-
-  .iconx {
-    display: none;
-  }
-  .logo {
-    width: 8rem;
-  }
-}
-
 /* PRODUCT VIEW */
 
 #productView {
@@ -440,8 +392,9 @@ form {
   gap: 1rem;
 }
 img.bagImg {
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  object-fit: contain;
 }
 section.bagInfo {
   display: flex;
@@ -527,4 +480,65 @@ section.bagInfo .toggleItem:first-child {
   margin-left: -5px;
   margin-top: -40px;
   border-left: 15px solid;
+}
+
+/*//// MEDIA QUERIES /////*/
+
+@media only screen and (min-width: 768px) {
+  /* FOOTER */
+  .footerTop {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .leftFooter,
+  form {
+    margin-right: 1rem;
+  }
+  .footerBottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  /* PRODUCT VIEW */
+  #productView {
+    flex-direction: row;
+    padding: 2rem 6rem;
+  }
+  #productView article {
+    min-width: 40%;
+  }
+}
+/* BURGER MENU*/
+@media screen and (min-width: 1010px) {
+  .burgercontainer {
+    display: none;
+  }
+  /*product view*/
+  #productView article {
+    min-width: 60%;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .regularmenu {
+    display: none;
+  }
+  .icons {
+    padding-left: 0;
+  }
+
+  header {
+    padding-right: 1rem;
+  }
+
+  .iconx {
+    display: none;
+  }
+  .logo {
+    width: 8rem;
+  }
 }
