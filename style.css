@@ -213,6 +213,140 @@ a.logo:hover {
   max-width: 1rem;
 }
 
+/* LANDING PAGE */
+.gradient {
+  height: 550px;
+  width: 100%;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.front_products {
+  display: flex;
+  flex-direction: column;
+}
+.front_products_images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0px 40px;
+  row-gap: 20px;
+}
+.front_product_image {
+  height: 29vw;
+  width: 23vw;
+  background-color: #6ec1e3;
+}
+.front_products_nav {
+  margin-left: -13px;
+}
+.front_products_nav ul {
+  list-style-type: none;
+}
+.front_products_nav li {
+  float: left;
+  padding: 14px;
+  font-size: 18px;
+}
+.fav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.fav_text,
+.sus_text {
+  text-align: center;
+  font-size: 28px;
+}
+.button_fav,
+.button_sus {
+  border: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #6ec1e3;
+  padding: 13px 30px;
+  border-radius: 5px;
+  color: #f2f1f0;
+  font-size: 16px;
+}
+.sustainability {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "image text";
+}
+.sus_image {
+  width: 100%;
+}
+.sus_image_1 {
+  width: 100%;
+  opacity: 0.65;
+}
+
+.sus_text {
+  position: relative;
+  grid-area: text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  right: 135px;
+}
+.zero_impact {
+  display: flex;
+  margin: 0px 100px;
+  gap: 90px;
+}
+.impact_products_image {
+  width: 260px;
+  height: 360px;
+  background-color: #6ec1e3;
+}
+.impact_products {
+  display: flex;
+  gap: 20px;
+}
+.arrivals_image,
+.classics_image,
+.crossbody_image {
+  height: 640px;
+  width: 420px;
+  background-color: #6ec1e3;
+}
+.arrivals,
+.classics,
+.crossbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.shop_stuff {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.vibes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.vibes_image {
+  width: 260px;
+  height: 260px;
+  background-color: #6ec1e3;
+}
+.vibes_images {
+  display: flex;
+  gap: 10px;
+}
+
 /*/ //// FOOTER //////*/
 footer {
   background-color: var(--bg--blue);
