@@ -44,7 +44,18 @@ h6 {
   animation: banner 2s ease-out infinite;
   font-size: 0.7rem;
 }
-
+.shippingBanner {
+  background-color: var(--bg--blue);
+  color: white;
+  z-index: 10;
+  font-weight: 300;
+  font-size: 0.7rem;
+  line-height: 2rem;
+  padding-right: 35px;
+}
+.shippingBanner {
+  display: none;
+}
 .shippingBanner:hover {
   opacity: 0.4;
   cursor: pointer;
@@ -641,13 +652,7 @@ section.bagInfo .toggleItem:first-child {
 
   /* SHIPPING */
   .shippingBanner {
-    background-color: var(--bg--blue);
-    color: white;
-    z-index: 10;
-    font-weight: 300;
-    font-size: 0.7rem;
-    line-height: 2rem;
-    padding-right: 35px;
+    display: block;
   }
 }
 /* BURGER MENU*/
