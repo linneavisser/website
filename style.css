@@ -9,6 +9,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--body--font);
 }
@@ -618,6 +621,90 @@ section.bagInfo .toggleItem:first-child {
   margin-left: -5px;
   margin-top: -40px;
   border-left: 15px solid;
+}
+/*//////////SUSTAINABILITY PAGE/////// */
+/*hero img*/
+.sustainabilityIMG {
+  position: relative;
+  text-align: center;
+  width: 100vw;
+  height: 70vh;
+  z-index: -1;
+}
+.sustainabilityIMG img {
+  width: 100%;
+  height: 100%;
+}
+.sustHeader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+}
+/*timeline*/
+.timelineContent figure {
+  grid-column: 1/ 3;
+  object-fit: fill;
+}
+.timelineContent img {
+  width: 100%;
+  height: 100%;
+}
+.timelineContent {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: grid;
+  grid-template-columns: 20% 80%;
+}
+.year {
+  border-right: solid 2px black;
+}
+.year h3 {
+  padding: 1rem 0 0 0.5rem;
+}
+.timeLineEnd {
+  padding: 0 2rem 1rem 25%;
+}
+/*FIG CAPTION AND READMORE*/
+.captionGrid {
+  display: grid;
+  grid-template-columns: 35% 1fr;
+  padding: 1rem 0 3rem 0.5rem;
+}
+.captionGrid h4 {
+  grid-column: 1/ 3;
+}
+.captionGrid p {
+  padding-top: 0.5rem;
+}
+.readMoreArrow {
+  background-image: url(svg/down-arrow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
+  margin-top: 0.3rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  grid-column: 1/ 3;
+}
+.readmoreContent {
+  display: none;
+  background: white;
+}
+.dropdown:hover .readmoreContent {
+  display: block;
+}
+.readmoreFlex {
+  display: flex;
+}
+/*general fixing sustainability page*/
+#goals {
+  padding-bottom: 1rem;
 }
 
 /*//// MEDIA QUERIES /////*/
