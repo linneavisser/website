@@ -645,15 +645,33 @@ section.bagInfo .toggleItem:first-child {
 }
 /*intro text to sustainability*/
 .intro {
-  padding: 3rem 2rem 3rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
 }
 .intro p {
   padding-bottom: 1rem;
   line-height: 1.4rem;
   font-weight: 400;
 }
-/*navigation menue*/
+/*navigation menue and down arrow*/
+.seeOur {
+  display: flex;
+  column-gap: 0.3rem;
+}
+.seeOur img {
+  width: 30px;
+}
+.seeOur p {
+  padding: 0.3rem 0 0 0;
+}
+/*.arrow {
+  background-image: url(svg/down-arrow.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 40px;
+}*/
 .susNav {
+  padding-top: 1rem;
   line-height: 1.6rem;
   opacity: 0.5;
 }
@@ -670,7 +688,7 @@ section.bagInfo .toggleItem:first-child {
 .midPart p {
   grid-column: 1/ 4;
   grid-row: 4;
-  padding: 1.6rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 .midPart p:last-child {
