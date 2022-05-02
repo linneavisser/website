@@ -643,6 +643,50 @@ section.bagInfo .toggleItem:first-child {
   font-weight: 300;
   letter-spacing: 0.3rem;
 }
+/*intro text to sustainability*/
+.intro {
+  padding: 3rem 2rem 3rem 2rem;
+}
+.intro p {
+  padding-bottom: 1rem;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+/*navigation menue*/
+.susNav {
+  line-height: 1.6rem;
+  opacity: 0.5;
+}
+
+/*middle part, section .intro*/
+.midPart {
+  display: grid;
+  grid-template-columns: 40% 30% 1fr;
+  grid-template-rows: 20% 20% 10% 20% 1fr;
+}
+.midPart img {
+  width: 100%;
+}
+.midPart p {
+  grid-column: 1/ 4;
+  grid-row: 4;
+  padding: 1.6rem 2rem 2rem 2rem;
+}
+
+.midPart p:last-child {
+  grid-row: 5;
+}
+.blue {
+  grid-column: 1/ 3;
+  opacity: 0.7;
+}
+.pink {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  z-index: 1;
+  opacity: 0.6;
+}
+
 /*timeline*/
 .timelineContent figure {
   grid-column: 1/ 3;
