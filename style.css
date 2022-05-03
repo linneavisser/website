@@ -8,6 +8,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: var(--body--font);
@@ -656,7 +657,7 @@ section.bagInfo .toggleItem:first-child {
   }
 }
 /* BURGER MENU*/
-@media screen and (min-width: 1010px) {
+@media screen and (min-width: 1100px) {
   .burgercontainer {
     display: none;
   }
@@ -666,7 +667,7 @@ section.bagInfo .toggleItem:first-child {
   }
 }
 
-@media screen and (max-width: 1010px) {
+@media screen and (max-width: 1100px) {
   .regularmenu {
     display: none;
   }
@@ -676,6 +677,7 @@ section.bagInfo .toggleItem:first-child {
 
   header {
     padding-right: 1rem;
+    position: fixed;
   }
 
   .iconx {
