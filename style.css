@@ -835,11 +835,7 @@ section.bagInfo .toggleItem:first-child {
 
   header {
     padding-right: 1rem;
-<<<<<<< HEAD
     position: fixed;
-=======
-    /*position: fixed;*/
->>>>>>> 3b802340217870d7ba426b2c1fc01337b6b097c9
   }
 
   .iconx {
