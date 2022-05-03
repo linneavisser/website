@@ -650,7 +650,7 @@ section.bagInfo .toggleItem:first-child {
 .intro p {
   padding-bottom: 1rem;
   line-height: 1.4rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 /*navigation menue and down arrow*/
 .seeOur {
@@ -689,6 +689,8 @@ section.bagInfo .toggleItem:first-child {
   grid-column: 1/ 4;
   grid-row: 4;
   padding: 1rem 2rem 2rem 2rem;
+  font-weight: 300;
+  line-height: 1.4rem;
 }
 
 .midPart p:last-child {
@@ -721,7 +723,7 @@ section.bagInfo .toggleItem:first-child {
   grid-template-columns: 20% 80%;
 }
 .year {
-  border-right: solid 2px black;
+  border-right: solid 1.5px rgb(181, 179, 179);
 }
 .year h3 {
   padding: 1rem 0 0 0.5rem;
@@ -763,6 +765,7 @@ section.bagInfo .toggleItem:first-child {
 }
 .readmoreFlex {
   display: flex;
+  font-weight: 300;
 }
 /*general fixing sustainability page*/
 #goals {
