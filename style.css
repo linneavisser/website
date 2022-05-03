@@ -840,6 +840,8 @@ section.bagInfo .toggleItem:first-child {
   width: 27px;
   height: 27px;
   margin-top: 0.3rem;
+  position: relative;
+  z-index: 15;
 }
 .dropdown {
   position: relative;
@@ -941,7 +943,7 @@ iframe {
   nav.susNav {
     position: sticky;
     top: 100px;
-    z-index: 20;
+    z-index: 12;
     padding-top: 3rem;
   }
   /* timeline */
