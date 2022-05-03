@@ -227,13 +227,14 @@ a.logo:hover {
 
 /* LANDING PAGE */
 .gradient {
-  height: 550px;
+  height: auto;
   width: 100%;
 }
 .main {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  margin-bottom: 200px;
 }
 .front_products {
   display: flex;
@@ -246,10 +247,26 @@ a.logo:hover {
   margin: 0px 40px;
   row-gap: 20px;
 }
+.p_bag {
+  font-size: 13px;
+}
+.p_price {
+  font-size: 10.5px;
+}
 .front_product_image {
+  height: 33vw;
+  width: 22vw;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image_place {
+  width: 100%;
   height: 29vw;
-  width: 23vw;
-  background-color: #6ec1e3;
+}
+.image_place img{
+  width: 100%;
 }
 .front_products_nav {
   margin-left: -13px;
@@ -311,21 +328,71 @@ a.logo:hover {
   margin: 0px 100px;
   gap: 90px;
 }
+.h_impact {
+  font-size: 46px;
+  font-weight: normal;
+}
+.p_impact {
+  color: #999998;
+}
+.p_learnmore {
+  text-decoration: underline;
+}
 .impact_products_image {
   width: 260px;
   height: 360px;
-  background-color: #6ec1e3;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .impact_products {
   display: flex;
-  gap: 20px;
+  gap: 30px;
+}
+.p_zero {
+  font-size: 13px;
+}
+.em_price {
+  font-size: 10.5px;
+}
+.p_shop {
+  font-size: 15px;
+  font-weight: bold;
+}
+em {
+  font-size: 14px;
+  font-style: normal;
+  color: #999998;
+  font-weight: normal;
+}
+.follow_studio {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.h_vibes {
+  font-size: 48px;
+  font-weight: normal;
+}
+.p_vibes {
+  font-size: 15px;
 }
 .arrivals_image,
 .classics_image,
 .crossbody_image {
-  height: 640px;
-  width: 420px;
-  background-color: #6ec1e3;
+  height: 44vw;
+  width: 29vw;
+}
+.arrivals_image_place,
+.classics_image_place,
+.crossbody_image_place {
+ height: 100%;
+ width: 100%;
+ transition: 0.3s;
+}
+.arrivals_image_place:hover,
+.classics_image_place:hover,
+.crossbody_image_place:hover {
+  transform: scale(1.01);
 }
 .arrivals,
 .classics,
@@ -335,6 +402,7 @@ a.logo:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  gap: 20px;
 }
 .shop_stuff {
   display: flex;
@@ -347,7 +415,8 @@ a.logo:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 100px;
 }
 .vibes_image {
   width: 260px;
@@ -357,6 +426,26 @@ a.logo:hover {
 .vibes_images {
   display: flex;
   gap: 10px;
+}
+.insta1,
+.insta2,
+.insta3,
+.insta4,
+.insta5 {
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+.insta1:hover,
+.insta2:hover,
+.insta3:hover,
+.insta4:hover,
+.insta5:hover {
+  -webkit-filter: brightness(110%);
+}
+
+.impact_products_image img{
+  width: 100%;
 }
 
 /*/ //// FOOTER //////*/
@@ -951,4 +1040,72 @@ section.bagInfo .toggleItem:first-child {
   .logo {
     width: 8rem;
   }
+}
+@media only screen and (max-width: 768px) {
+  /* LANDING PAGE */
+  .fav {
+    display: none;
+  }
+  .sustainability {
+    display: none;
+  }
+  .front_products_images {
+    display: flex;
+    flex-direction: column;
+  }
+  .front_product_image {
+    width: 100%;
+    height: 550px;
+  }
+  .image_place {
+    width: 100%;
+    height: 100%;
+  }
+  .shop_stuff {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .landing_image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  .zero_impact {
+    display: flex;
+    flex-direction: column;
+  }
+  .impact_products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vibes_images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .arrivals, .classics, .crossbody {
+    width: 94%;
+    height: auto;
+  }
+ .arrivals_image, .classics_image, .crossbody_image {
+   width: auto;
+   height: auto;
+ }
+ .dva, .tri {
+   display: none;
+ }
+}
+@media only screen and (max-width: 600px) {
+.vibes_image {
+  width: 90%;
+  height: auto;
+}
+.vibes {
+  margin-bottom: -60px;
+}
 }
