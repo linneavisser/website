@@ -78,6 +78,7 @@ h6 {
 /*HEADER - thordis*/
 header {
   position: fixed;
+  z-index: 10;
 }
 .header {
   display: flex;
@@ -168,6 +169,7 @@ a.logo:hover {
   padding: 0;
   background-color: white;
   z-index: 10;
+  margin-top: 2rem;
 }
 
 .nav-item:first-child {
