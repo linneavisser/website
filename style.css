@@ -265,7 +265,7 @@ a.logo:hover {
   width: 100%;
   height: 29vw;
 }
-.image_place img{
+.image_place img {
   width: 100%;
 }
 .front_products_nav {
@@ -385,9 +385,9 @@ em {
 .arrivals_image_place,
 .classics_image_place,
 .crossbody_image_place {
- height: 100%;
- width: 100%;
- transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
 }
 .arrivals_image_place:hover,
 .classics_image_place:hover,
@@ -444,7 +444,7 @@ em {
   -webkit-filter: brightness(110%);
 }
 
-.impact_products_image img{
+.impact_products_image img {
   width: 100%;
 }
 
@@ -1088,24 +1088,29 @@ section.bagInfo .toggleItem:first-child {
     justify-content: center;
   }
 
-  .arrivals, .classics, .crossbody {
+  .arrivals,
+  .classics,
+  .crossbody {
     width: 94%;
     height: auto;
   }
- .arrivals_image, .classics_image, .crossbody_image {
-   width: auto;
-   height: auto;
- }
- .dva, .tri {
-   display: none;
- }
+  .arrivals_image,
+  .classics_image,
+  .crossbody_image {
+    width: auto;
+    height: auto;
+  }
+  .dva,
+  .tri {
+    display: none;
+  }
 }
 @media only screen and (max-width: 600px) {
-.vibes_image {
-  width: 90%;
-  height: auto;
-}
-.vibes {
-  margin-bottom: -60px;
-}
+  .vibes_image {
+    width: 90%;
+    height: auto;
+  }
+  .vibes {
+    margin-bottom: -60px;
+  }
 }
