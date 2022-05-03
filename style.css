@@ -651,7 +651,7 @@ section.bagInfo .toggleItem:first-child {
 }
 /*intro text to sustainability*/
 .intro {
-  padding: 3rem 2rem 2rem 2rem;
+  padding: 3rem 2rem 0;
 }
 .intro p {
   padding-bottom: 1rem;
@@ -677,21 +677,21 @@ section.bagInfo .toggleItem:first-child {
   height: 40px;
 }*/
 .susNav {
-  padding-top: 1rem;
+  padding: 1rem 0;
   line-height: 1.6rem;
-  opacity: 0.5;
+  font-weight: 300;
 }
 
 /*middle part, section .intro*/
 .midPart {
   display: grid;
   grid-template-columns: 40% 30% 1fr;
-  grid-template-rows: 20% 20% 10% 20% 1fr;
+  grid-template-rows: 20% 20% 15% 20%;
 }
 .midPart img {
   width: 100%;
 }
-.midPart p {
+.midParagraphs {
   grid-column: 1/ 4;
   grid-row: 4;
   padding: 1rem 2rem 2rem 2rem;
@@ -699,9 +699,6 @@ section.bagInfo .toggleItem:first-child {
   line-height: 1.4rem;
 }
 
-.midPart p:last-child {
-  grid-row: 5;
-}
 .blue {
   grid-column: 1/ 3;
   opacity: 0.7;
@@ -734,9 +731,6 @@ section.bagInfo .toggleItem:first-child {
 .year h3 {
   padding: 1rem 0 0 0.5rem;
 }
-.timeLineEnd {
-  padding: 0 2rem 1rem 25%;
-}
 /*FIG CAPTION AND READMORE*/
 .captionGrid {
   display: grid;
@@ -766,6 +760,10 @@ section.bagInfo .toggleItem:first-child {
   display: none;
   background: white;
 }
+.readmoreContent li {
+  list-style: circle;
+  padding-bottom: 0.7rem;
+}
 .dropdown:hover .readmoreContent {
   display: block;
 }
@@ -777,7 +775,9 @@ section.bagInfo .toggleItem:first-child {
 #goals {
   padding-bottom: 1rem;
 }
-
+.line {
+  display: none;
+}
 /*//// MEDIA QUERIES /////*/
 
 @media only screen and (min-width: 768px) {
@@ -812,7 +812,114 @@ section.bagInfo .toggleItem:first-child {
   .shippingBanner {
     display: block;
   }
+
+  /* SUSTAINABILTY */
+  .sustainabilityIMG {
+    padding-bottom: 3rem;
+    height: 85vh;
+  }
+  section.intro {
+    width: 70%;
+    position: absolute;
+    right: 10%;
+  }
+  .midPart {
+    padding-top: 10rem;
+    grid-template-columns: 1fr 1fr 5% 1fr 1fr;
+    grid-template-rows: 20% 20% 20% 20%;
+  }
+  .midParagraphs {
+    padding-left: 3rem;
+  }
+  img.blue {
+    grid-column: 1/3;
+  }
+  img.pink {
+    grid-column: -1/-3;
+  }
+  /* sus sticky menu */
+  nav.susNav {
+    position: sticky;
+    top: 100px;
+    z-index: 20;
+    padding-top: 3rem;
+  }
+  /* timeline */
+
+  section#timeline {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    padding-bottom: 3rem;
+  }
+  .timelineContent {
+    margin: 0;
+  }
+  #leather,
+  #water,
+  #shipping,
+  #rPet {
+    width: 80%;
+    justify-self: end;
+    grid-template-columns: 80% 20%;
+    grid-column: 1;
+    margin-left: 2rem;
+  }
+  #cotton,
+  #vegan,
+  #goals,
+  #work {
+    width: 80%;
+    justify-self: start;
+    grid-column: 3;
+    margin-right: 2rem;
+  }
+  .gLine {
+    display: block;
+    background-color: rgb(181, 179, 179);
+    grid-column: 2;
+    grid-row: 1/9;
+    height: -webkit-fill-available;
+    width: 1.5px;
+    justify-self: center;
+  }
+  #cotton {
+    grid-row: 2/3;
+  }
+  #water {
+    grid-row: 3/4;
+  }
+  #work {
+    grid-row: 4;
+  }
+  #shipping {
+    grid-row: 5;
+  }
+  #vegan {
+    grid-row: 6;
+  }
+  #rPet {
+    grid-row: 7;
+  }
+  #goals {
+    grid-row: 8;
+  }
+  .year {
+    border: none;
+  }
+  .right {
+    grid-column: 2;
+    padding-left: 50%;
+  }
+  .left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .captionGrid {
+    grid-row: 2;
+    padding-bottom: 0;
+  }
 }
+
 /* BURGER MENU*/
 @media screen and (min-width: 1010px) {
   .burgercontainer {
