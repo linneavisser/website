@@ -6,7 +6,7 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("change");
 });
 
-// PRODUCT LIST
+// PRODUCT LIST & PRODUCT VIEW
 window.addEventListener("DOMContentLoaded", init);
 
 function init(event) {
