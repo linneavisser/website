@@ -76,13 +76,16 @@ h6 {
 }
 
 /*HEADER - thordis*/
+header {
+  position: fixed;
+}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
   border-bottom: rgb(208, 208, 208) solid 1px;
-  position: sticky;
+  /*position: fixed;*/
   top: 0;
   background-color: white;
 }
@@ -829,6 +832,7 @@ section.bagInfo .toggleItem:first-child {
 
   header {
     padding-right: 1rem;
+    /*position: fixed;*/
   }
 
   .iconx {
