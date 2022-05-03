@@ -45,6 +45,9 @@ h6 {
   font-size: 0.7rem;
 }
 .shippingBanner {
+  display: none;
+}
+.shippingBanner {
   background-color: var(--bg--blue);
   color: white;
   z-index: 10;
@@ -53,9 +56,7 @@ h6 {
   line-height: 2rem;
   padding-right: 35px;
 }
-.shippingBanner {
-  display: none;
-}
+
 .shippingBanner:hover {
   opacity: 0.4;
   cursor: pointer;
